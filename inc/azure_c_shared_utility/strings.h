@@ -4,16 +4,16 @@
 #ifndef STRINGS_H
 #define STRINGS_H
 
-#include "azure_c_shared_utility/umock_c_prod.h"
-#include "azure_c_shared_utility/strings_types.h"
 
 #ifdef __cplusplus
 #include <cstddef>
 extern "C"
 {
-#else
-#include <stddef.h>
 #endif
+
+#include <stddef.h>
+#include "azure_c_shared_utility/umock_c_prod.h"
+#include "azure_c_shared_utility/strings_types.h"
 
 MOCKABLE_FUNCTION(, STRING_HANDLE, STRING_new);
 MOCKABLE_FUNCTION(, STRING_HANDLE, STRING_clone, STRING_HANDLE, handle);
